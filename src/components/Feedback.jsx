@@ -10,6 +10,7 @@ const Feedback = () => {
         <div className='frame pd-frame bd-rd-20 fh quesps'>
             <h1 className='mb-20'>Rate Your Experience with </h1>
             <Citation />
+            <Citation />
             <Rating listings={rating_text}/>
             <OpenQuestion />
         </div>
