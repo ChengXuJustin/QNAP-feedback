@@ -3,6 +3,7 @@ import Citation from './Citation'
 import Rating from './Rating'
 import rating_text from '../data/rating.json'
 import OpenQuestion from './OpenQuestion'
+import Test from './test'
 
 
 const Feedback = () => {
@@ -12,6 +13,7 @@ const Feedback = () => {
             <Citation />
             <Rating listings={rating_text}/>
             <OpenQuestion />
+            <Test />
         </div>
   )
 }
