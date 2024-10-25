@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { FaMicrophoneAlt, FaImage, FaVideo, FaTextHeight, FaTelegramPlane } from "react-icons/fa";
 
+const open_placeholder = "Please tell us your opinion. To help you protect your privacy, please do not contain any personal information(Eg: your name or address)."
+
 const OpenQuestion = () => {
 
   const [text, setText] = useState('')
@@ -39,7 +41,7 @@ const OpenQuestion = () => {
         <textarea
           name="open-question"
           id=""
-          placeholder='Please tell us your opinion. To help you protect your privacy, please do not contain any personal information(Eg: your name or address).'
+          placeholder={open_placeholder}
           className='fw textAreah bd-rd-5 pd-10'
           onChange={(e) => setText(e.target.value)}
         />
