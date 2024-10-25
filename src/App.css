@@ -23,8 +23,12 @@
 
 .frame{
   width: 40%;
-  box-shadow: -5px 0px 15px rgb(227, 227, 227);
-  outline: 1px solid rgb(212, 212, 212);
+  box-shadow: -5px 0px 15px rgb(84, 84, 84);
+  outline: 1px solid rgb(129, 129, 129);
+}
+
+.method-hover-bg:hover{
+  background-color: #7d7d7d;
 }
 
 .fh{
@@ -51,6 +55,11 @@
   border-radius: 20px;
 }
 
+.bd-rd-frame-20{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .pd-frame{
   padding: 20px 40px;
 }
@@ -64,6 +73,10 @@
 }
 
 .mg-r{
+  margin-right: 10px;
+}
+
+.mg-r-10{
   margin-right: 10px;
 }
 
@@ -81,6 +94,10 @@
 
 .mg-l-10{
   margin-left: 10px;
+}
+
+.mg-ct{
+  margin: auto auto;
 }
 
 .df{

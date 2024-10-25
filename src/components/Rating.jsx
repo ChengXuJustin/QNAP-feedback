@@ -8,10 +8,10 @@ const Rating = ( {listings = []} ) => {
 
     const renderParagraph = item.description.map((question, paraDex) => {
         return (
-          <>
-            <p key={paraDex} className='mb-10'>({paraDex+1}) {question}</p>
+          <div key={paraDex}>
+            <p className='mb-10'>({paraDex+1}) {question}</p>
             <StarRate />
-          </>
+          </div>
         )
     })
 

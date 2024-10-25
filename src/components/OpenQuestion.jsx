@@ -5,24 +5,24 @@ const OpenQuestion = () => {
 
   const [text, setText] = useState('')
   const [method, setMethod] = useState('')
-  const [selectMethod, setSelectedMethod] = useState('text')
+  const [selectMethod, setSelectedMethod] = useState('')
 
   const feedbackMethod = [
     {
       id: "text",
-      icon: "FaTextHeight"
+      icon: FaTextHeight
     },
     {
       id: "audio",
-      icon: "FaMicrophoneAlt"
+      icon: FaMicrophoneAlt
     },
     {
       id: "image",
-      icon: "FaImage"
+      icon: FaImage
     },
     {
       id: "video",
-      icon: "FaVideo"
+      icon: FaVideo
     },
   ]
 
@@ -43,25 +43,23 @@ const OpenQuestion = () => {
           className='fw textAreah bd-rd-5 pd-10'
           onChange={(e) => setText(e.target.value)}
         />
-        {/* <div>
-          <ul className='fw df pd-0'>
-            <li className={`pd-10 mg-r`}><FaTextHeight /></li>
-            <li className='pd-10 mg-r'><FaMicrophoneAlt /></li>
-            <li className='pd-10 mg-r'><FaImage /></li>
-            <li className='pd-10 mg-r'><FaVideo /></li>
-          </ul>
-        </div> */}
         <div>
-          <ul>
+          <ul className='df'>
             {feedbackMethod.map((methodItem, index) => {
-              const Icon = methodItem.icon;
+              const Icon = methodItem.icon
               return(
                 <li
-                  key={feedbackMethod.id}
-                  onClick={()=> setSelectedMethod(feedbackMethod.id)}
-                  className={`${selectMethod === method.id} ? '' : ''`}
+                  key={index}
+                  onClick={() => setSelectedMethod(feedbackMethod.id)}
+                  className={`
+                    ${selectMethod === methodItem.id}
+                    ? ' pd-10 mg-r-10 bd-rd-10 method-hover-bg hover:method-hover-bg cursor-pointer '
+                    : ' '
+                  `}
                 >
-                  {/* <Icon /> */}
+                  <Icon size={25} className='mg-ct'/>
+                  <h2>{selectMethod}</h2>
+                  {console.log(selectMethod)}
                 </li>
               )
             })}
