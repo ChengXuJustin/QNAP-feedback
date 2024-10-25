@@ -40,9 +40,12 @@ const OpenQuestion = () => {
         </div> */}
         <div>
           {/* {`${feedbackMethod.map(methodItem, index)}`} */}
+          {feedbackMethod.map(methodItem, index)}
         </div>
         <div className='df fw jc-fe'>
-          <button className='sm-btn df aln-tm-ct jc-sb'>Submit<FaTelegramPlane /></button>
+          <button className='sm-btn df aln-tm-ct jc-sb'>
+            Submit<FaTelegramPlane className='mg-l-10'/>
+          </button>
         </div>
       </form>
     </div>

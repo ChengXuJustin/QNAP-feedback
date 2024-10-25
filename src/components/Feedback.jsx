@@ -14,7 +14,6 @@ const Feedback = () => {
             <Rating listings={rating_text}/>
             <OpenQuestion />
             <Test />
-            <h2>Test for the Merge from iMac to Main</h2>
         </div>
   )
 }

@@ -10,6 +10,23 @@
   margin: 0;
 }
 
+.textAreah{
+  height: 100px;
+  line-height: 1.5;
+}
+
+.quesps{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.frame{
+  width: 40%;
+  box-shadow: -5px 0px 15px rgb(227, 227, 227);
+  outline: 1px solid rgb(212, 212, 212);
+}
+
 .fh{
   height: 100vh;
 }
@@ -18,19 +35,8 @@
   width: 100%;
 }
 
-.textAreah{
-  height: 100px;
-  line-height: 1.5;
-}
-
 .lh-15{
   line-height: 1.5;
-}
-
-.quesps{
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .bd-rd-5{
@@ -43,11 +49,6 @@
 
 .bd-rd-20{
   border-radius: 20px;
-}
-
-.frame{
-  width: 40%;
-  box-shadow: -5px 0px 15px rgb(227, 227, 227);
 }
 
 .pd-frame{
@@ -78,6 +79,10 @@
   margin-bottom: 30px;
 }
 
+.mg-l-10{
+  margin-left: 10px;
+}
+
 .df{
   display: flex;
 }
@@ -97,8 +102,6 @@
 .aln-tm-ct{
   align-items: center;
 }
-
-.method-btn
 
 .cursor-pointer{
   cursor: pointer;
