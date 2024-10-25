@@ -5,12 +5,25 @@ const OpenQuestion = () => {
 
   const [text, setText] = useState('')
   const [method, setMethod] = useState('')
+  const [selectMethod, setSelectedMethod] = useState('text')
 
   const feedbackMethod = [
-    "<FaTextHeight />",
-    "<FaMicrophoneAlt />",
-    "<FaImage />",
-    "<FaVideo />"
+    {
+      id: "text",
+      icon: "FaTextHeight"
+    },
+    {
+      id: "audio",
+      icon: "FaMicrophoneAlt"
+    },
+    {
+      id: "image",
+      icon: "FaImage"
+    },
+    {
+      id: "video",
+      icon: "FaVideo"
+    },
   ]
 
   const handleSubmit = (e) => {
@@ -39,8 +52,21 @@ const OpenQuestion = () => {
           </ul>
         </div> */}
         <div>
-          {/* {`${feedbackMethod.map(methodItem, index)}`} */}
-          {feedbackMethod.map(methodItem, index)}
+          <ul>
+            {feedbackMethod.map((methodItem, index) => {
+              const Icon = methodItem.icon;
+              return(
+                <li
+                  key={feedbackMethod.id}
+                  onClick={()=> setSelectedMethod(feedbackMethod.id)}
+                  className={`${selectMethod === method.id} ? '' : ''`}
+                >
+                  {/* <Icon /> */}
+                </li>
+              )
+            })}
+            
+          </ul>
         </div>
         <div className='df fw jc-fe'>
           <button className='sm-btn df aln-tm-ct jc-sb'>
