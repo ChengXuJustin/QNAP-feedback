@@ -1,8 +1,8 @@
 import React from 'react'
 import Citation from './Citation'
 import Rating from './Rating'
-import rating_text from '../data/rating.json'
 import OpenQuestion from './OpenQuestion'
+import rating_text from '../data/rating.json'
 
 
 const Feedback = () => {
