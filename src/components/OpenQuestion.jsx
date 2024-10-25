@@ -58,8 +58,6 @@ const OpenQuestion = () => {
                   `}
                 >
                   <Icon size={25} className='mg-ct'/>
-                  <h2>{selectMethod}</h2>
-                  {console.log(selectMethod)}
                 </li>
               )
             })}
