@@ -2,6 +2,7 @@ import React from 'react'
 import Citation from './Citation'
 import Rating from './Rating'
 import OpenQuestion from './OpenQuestion'
+import Practicality from './Practicality'
 import rating_text from '../data/rating.json'
 
 
@@ -11,6 +12,7 @@ const Feedback = () => {
             <h1 className='mb-20'>Rate Your Experience with </h1>
             <Citation />
             <Rating listings={rating_text}/>
+            <Practicality />
             <OpenQuestion />
         </div>
   )

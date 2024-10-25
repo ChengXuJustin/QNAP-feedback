@@ -1,7 +1,6 @@
 import React from 'react'
 import StarRate from './StarRate'
 
-
 const Rating = ( {listings = []} ) => {
 
   const renderItems = listings.map((item, index) => {
